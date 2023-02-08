@@ -1,7 +1,8 @@
 {
-    "editor.tabSize": 8,
+    "editor.tabSize": 4,
     "editor.rulers": [
-        100
+        80,
+        120
     ],
     "files.associations": {
         "*.repos": "yaml",
@@ -20,10 +21,10 @@
     // Use the system installed version of autopep8
     "python.formatting.autopep8Path": "/usr/bin/autopep8",
     "python.formatting.autopep8Args": [
-        "--max-line-length=100"
+        "--max-line-length=120"
     ],
     "C_Cpp.default.intelliSenseMode": "linux-gcc-x86",
-    "C_Cpp.formatting": "Disabled",
+    "C_Cpp.formatting": "disabled",
     "uncrustify.configPath.linux": "/opt/ros/foxy/lib/python3.8/site-packages/ament_uncrustify/configuration/ament_code_style.cfg",
     "[cpp]": {
         "editor.defaultFormatter": "zachflower.uncrustify"
