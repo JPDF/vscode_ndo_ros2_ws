@@ -2,3 +2,6 @@ build/*
 install/*
 log/*
 site/*
+# Do not track repos, import them using setup.sh
+src/*
+!src/ros2.repos
