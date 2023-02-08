@@ -6,6 +6,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update \
    && apt-get -y install --no-install-recommends \
    ros-foxy-rqt-graph \
+   xterm \
    #
    # Clean up
    && apt-get autoremove -y \
