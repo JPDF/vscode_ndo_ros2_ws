@@ -1,8 +1,8 @@
 #!/bin/bash
-set -e
 
 ./setup.sh
-ament_${LINTER} src/
-if [[ $? == 1 ]]; then
-    exit 0
-fi
+
+output=$(ament_${LINTER} src/ 2>&1)
+exit_code=$?
+echo "$output"
+grep -qi "No files found" <<< $output && exit 0 || exit $exit_code
