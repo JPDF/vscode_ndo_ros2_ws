@@ -5,3 +5,7 @@ repositories:
     type: git
     url: https://github.com/andersCTO/NDO.git
     version: main
+  ndo_sim:
+    type: git
+    url: https://github.com/JPDF/ndo_sim.git
+    version: main
